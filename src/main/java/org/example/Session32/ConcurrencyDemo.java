@@ -79,7 +79,7 @@ public class ConcurrencyDemo {
                 Thread t2 = new Thread(() -> {
                     for (int i = 0; i < 10000; i++)
                         unsafe.increment();
-                }, "Thread unsafe ");
+                }, "Thread unsafe 2");
                 t1.start();
                 t2.start();
                 t1.join();
