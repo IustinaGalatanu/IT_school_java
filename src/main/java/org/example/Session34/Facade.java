@@ -15,6 +15,13 @@ class SistemVideo {
         System.out.println("Videoproiector pornit");
     }
 }
+
+class SistemDraperii {
+    public void trageDraperii(){
+        System.out.println("Draperii trase");
+    }
+}
+
 class HomeCinemaFacade {
     public SistemLumini sistemLumini;
     public SistemAudio sistemAudio;
@@ -33,12 +40,6 @@ class HomeCinemaFacade {
         sistemAudio.pornesteSistemulAudio();
         sistemVideo.pornesteVideoProiector();
         sistemDraperii.trageDraperii();
-    }
-}
-
-class SistemDraperii {
-    public void trageDraperii(){
-        System.out.println("Draperii trase");
     }
 }
 
